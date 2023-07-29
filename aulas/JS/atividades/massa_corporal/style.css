@@ -1,0 +1,146 @@
+/* Padrão do site */
+html, body {
+    color: #444;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis */
+:root {
+    --verde: rgb(12, 224, 118);
+    --primaria:#164e9c;
+    --secudario: #041E40;
+    --destaque: #eb790e;
+    --borda: #7fa0cf94;
+    /* Tamanho da fonte (em) */
+    --titulo: 2em;
+    --subtitulo: 1em;
+    --texto: 0.9em;
+}
+
+/* Container */
+.container {
+    /* background-color: var(--secudario); */
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 15px 30px 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 0 #0d2d5a1f;
+}
+
+/* Textos */
+
+h1 {
+    font-size: var(--titulo);
+    color: var(--primaria);
+    text-align: center;
+}
+
+h3 {
+    font-size: var(--subtitulo);
+    font-weight: 500;
+}
+
+h4 {
+    font-size: var(--subtitulo);
+    font-weight: 600;
+    color: var(--primaria);
+}
+
+p {
+    font-size: var(--texto);
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;
+}
+
+span {
+    font-size: var(--texto);
+    display: block;
+}
+
+/* Inputs */
+.inputs-calc {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 0;
+}
+
+input {
+    padding: 8px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--primaria);
+}
+
+/* Botões */
+button {
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-calc {
+    background-color: var(--primaria);
+    margin-right: 20px;
+}
+
+.btn-clear {
+    background-color: var(--destaque);
+}
+
+/* Tabela de dados */
+.table-calc {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table-calc thead tr td {
+    font-size: var(--texto);
+    font-weight: 500;
+    background: var(--secudario);
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.table-calc tbody tr td {
+    font-size: var(--texto);
+    padding: 5px 5px;
+    border-bottom: 1px solid var(--borda);
+    transition: .2s background;
+    background: #fff;
+}
+
+.table-calc tr.table-calc-blue > td{
+    color: var(--primaria);
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+/* Resultado */
+.calc-result {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 10px 35%;
+    background-color: var(--destaque);
+    color: #fff;
+    border-radius: 20px;
+}

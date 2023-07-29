@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Calcúlo da massa corporal</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Realize um cálculo</h1>
+        <p>Informe a operação que deseja realizar no campo a baixo</h3>
+
+        <!-- Entrada dos dados -->
+        <div class="inputs-calc">
+            <h4><small>(Digite um valor)</small></h4>
+            <input type="number" placeholder="20" id="valor1">
+        </div> <!-- .inputs-calc -->
+
+        <div class="buttons">
+            <button type="button" class="btn-som" id="btn_soma">Soma (+)</button>
+            <button type="button" class="btn-sub" id="btn_subtair">Subtrair (-)</i></button>
+        </div>
+
+        <div class="inputs-calc">
+            <h4><small>(Digite um valor)</small></h4>
+            <input type="text" placeholder="11" id="valor2">
+        </div> <!-- .inputs-calc -->
+
+        <!-- Botões -->
+        <div class="buttons">
+            <button type="button" class="btn-calc" id="submit_calc">Calcular</button>
+            <button type="button" class="btn-clear" id="clear_calc">Limpar</i></button>
+        </div>
+
+        <!-- Resultado -->
+        <div class="calc-result">
+            <h3>Resultado:</h3>
+            <span>Valor12</span>
+        </div>
+    </main>
+    <!-- Script do calculo -->
+    <script src="soma_subtracao.js"></script>
+</body>
+</html>
