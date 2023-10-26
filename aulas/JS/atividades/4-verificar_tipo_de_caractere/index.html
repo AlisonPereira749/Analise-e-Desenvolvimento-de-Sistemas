@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Verificar o caracter digitado</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Verificar o caracter digitado, se for letra vai para o campo"Letras" se números vai para o campo "números"</h1>
+
+        <p>Separar letras e números</h3>
+
+        <!-- Entrada dos dados -->
+        <input type="text" id="entrada" placeholder="Digite um caracter aqui.." onkeyup="distribuiCacarter()">
+
+        <div class="letras">
+            <h4><small>(Letras)</small></h4>
+            <input type="text" id="letras" disabled>
+        </div> 
+
+        <div class="numeros">
+            <h4><small>(Números)</small></h4>
+            <input type="number" id="numeros" disabled>
+        </div> 
+    <!-- Script do calculo -->
+    <script src="distribuir_caracter.js"></script>
+</body>
+</html>

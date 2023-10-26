@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Modificando Estilo do elemento com um Click</title>
+</head>
+<body onresize="capturaDimensaoJanela()">
+
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="imagens/coracao_cheio.png" alt="Vida Cheia">
+            <img id="v2" src="imagens/coracao_cheio.png" alt="Vida Cheia">
+            <img id="v3" src="imagens/coracao_cheio.png" alt="Vida Cheia">
+        </div>
+
+        <div class="cronometro">Tempo Restante: <span id="cronometro"></span></div>
+    </div>
+    <!-- Script do calculo -->
+    <script src="game_mata_mosquito.js"></script>
+</body>
+</html>
